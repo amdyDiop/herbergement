@@ -1,4 +1,3 @@
 <?php
 
-
-echo "page d'aceuill ngay am foofou";
+require_once ('template/layout/base.php');
