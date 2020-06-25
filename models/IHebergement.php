@@ -1,5 +1,5 @@
 <?php
-interface IQuizz{
+interface IHebergement{
     //Abstraites
       public function hydrate($row);
 }
