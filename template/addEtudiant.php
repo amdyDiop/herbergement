@@ -8,6 +8,7 @@
         <!-- tools box -->
         <!-- /. tools -->
     </div>
+    <div id="resultat"></div>
     <div class="box-body">
         <form action="#" method="post" id="myForm">
             <div class="col-xs-6">
@@ -35,7 +36,7 @@
             <div class="col-xs-6">
                 <label>Chambre</label>
                 <select class="form-control" name="chambre" id="chambre">
-                    <option value="0">Pas De Chambre</option>
+                    <option value=0>Pas De Chambre</option>
                 </select>
                 <span id="chambre-error" class="error"></span>
 

@@ -90,7 +90,7 @@ $(document).ready(function () {
                     $("#content #adresse-error").addClass("alert alert-danger").html("l'étudiant doit avoir un adresse  !")
                         .fadeIn().delay(2500).fadeOut();
                 }
-                if (chambre != "0") {
+                if (chambre != 0) {
                     $("#content #chambre-error").addClass("alert alert-danger").html("l'étudiant ne doit avoir une chambre  !")
                         .fadeIn().delay(2500).fadeOut();
                 }
@@ -118,17 +118,22 @@ $(document).ready(function () {
                                    .fadeIn().delay(2500).fadeOut();
                            }
                            else if (data== "email non valide"){
-                                $("#content #email-error").addClass("alert alert-danger").html("Veuillez saisir un email valide !")
-                                    .fadeIn().delay(2500).fadeOut();
+                               $("#content #email-error").addClass("alert alert-danger").html("Veuillez saisir un email valide !")
+                                   .fadeIn().delay(2500).fadeOut();
                             }
+                           else if (data=="success"){
+                               $("#content #resultat").addClass("alert-success").html("l'étudiant à été enregistré !")
+                                   .fadeIn().delay(2500).fadeOut();
+                               $("#content #myForm").trigger('reset'); //jquery
+                           }
+                           else
+                               alert(data);
                         }, error: function (data) {
                             console.log('erreur');
-                            console.log(data);
+                            alert(data);
                         }
                     });
                 }
             }
-
-
         });
 });

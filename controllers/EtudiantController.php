@@ -10,6 +10,9 @@ spl_autoload_register(function ($class) {
         require_once($pathLibs);
     }
 });
+
+
+
 $etudiant = new Etudiant();
 
 if ($_POST['prenom']) {
@@ -17,16 +20,23 @@ if ($_POST['prenom']) {
     $validator = new Validator();
     if ($validator->isEamil($email) !== 1) {
         echo $validator->isEamil($email);
-    }
-    if ($validator->isTelephone($telephone) !== 1) {
-        echo $validator->isTelephone($telephone);
-    }
-    $matricule = $validator->genereMatricule($prenom, $nom);
-    echo $etudiant->enregistrerEtudiant($prenom,$nom,$matricule,$telephone,$email,$chambre,$adresse, $bourse,$date_naiss)!=0;
 
+    }
+    else if ($validator->isTelephone($telephone) !== 1) {
+        echo $validator->isTelephone($telephone);
+
+    }
+    else{
+        $matricule = $validator->genereMatricule($prenom, $nom);
+        if ($chambre ==0){
+
+            echo $etudiant->EtudiantNoChambre($prenom,$nom,$matricule,$telephone,$email,$adresse, $bourse,$date_naiss);
+        }
+        else
+        echo $etudiant->enregistrerEtudiant($prenom,$nom,$matricule,$telephone,$email,$chambre,$adresse, $bourse,$date_naiss);
+    }
 
 } else if ($_POST['limit']) {
-
     $etudiant = new Etudiant();
     echo json_encode($etudiant->findAll());
 }
