@@ -20,30 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd0ad6af-8465-4d69-847c-e87dd01409fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/template/addChambre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/addEtudiant.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/listEtudiant.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/listeChambre.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/deletePanier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/inscription.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/jquery-price-slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.countdown.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.elevateZoom-3.0.8.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.elevatezoom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.meanmenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.scrollUp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/myFunctionAdmin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/newProduit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/panier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/payment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/vendor/jquery-1.11.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/vendor/jquery-1.12.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/vendor/modernizr-2.8.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/wow.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/layout/base.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/layout/base.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +91,7 @@
       <updated>1592830645553</updated>
       <workItem from="1592830646899" duration="2367000" />
       <workItem from="1593035629841" duration="3569000" />
-      <workItem from="1593043106867" duration="5261000" />
+      <workItem from="1593043106867" duration="6002000" />
     </task>
     <servers />
   </component>
