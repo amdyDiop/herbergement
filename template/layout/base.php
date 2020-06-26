@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Admin Ecommerce</title>
+    <title>Hebergement Etudiant</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -172,7 +172,20 @@
         <section class="content">
             <!-- Small boxes (Stat box) -->
             <div class="row">
-                <div class="col-lg-6 col-xs-4">
+                <div class="col-lg-4 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-aqua">
+                        <div class="inner">
+                            <h3>150</h3>
+                            <p>nouvelles commandes</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-bag"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">plus info <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xs-6">
                     <!-- small box -->
                     <div class="small-box bg-aqua">
                         <div class="inner">
@@ -186,7 +199,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-xs-4">
+                <div class="col-lg-4 col-xs-6">
                     <!-- small box -->
                     <div class="small-box bg-red">
                         <div class="inner">
