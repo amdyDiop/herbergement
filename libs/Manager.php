@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1);
+
 abstract class Manager{
     //Connexion est Fermée
     private $pdo=null;
@@ -21,14 +23,12 @@ abstract class Manager{
       $this->pdo=null;
     }
   }
-
   public function executeUpdate($sql){
           $this->getConnexion();
            $nbreLigne= $this->pdo->exec($sql);
           $this->closeConnexion();
           return $nbreLigne;
    }
-
   public function executeSelect($sql){
     $this->getConnexion();
     //Traitement
@@ -51,7 +51,6 @@ public function findById($id){
     $data=$this->executeSelect($sql);
     return count($data)==1?$data[0]:$data;
 }
-
 public function delete($id){
     $sql="delete from $this->tableName where id=$id";
     return $this->executeUpdate($sql)!=0;

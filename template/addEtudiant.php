@@ -1,6 +1,6 @@
 <!-- quick email widget -->
 <div class="box box-info col-sm-12 justify-content-center">
-    <span id="resultat" ></span>
+    <span id="resultat"></span>
     <div class="box-header">
 
         <i class="fa fa-user-circle"></i>
@@ -9,51 +9,52 @@
         <!-- /. tools -->
     </div>
     <div class="box-body">
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form action="#" method="post" id="myForm">
             <div class="col-xs-6">
                 <label>Prénom</label>
-                <input type="text" id="prenom" class="form-control col-6" name="prenom" placeholder="Prénom:">
+                <input type="text" class="form-control col-6" id="prenom" name="prenom" placeholder="Prénom:">
                 <span id="prenom-error" class="error"></span>
             </div>
             <div class="col-xs-6">
                 <label>Nom</label>
-                <input type="text" class="form-control"  id="nom" name="nom" placeholder="Nom:">
+                <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom:">
                 <span id="nom-error" class="error"></span>
 
             </div>
             <div class="col-xs-6">
-                <label>Matricule</label>
-                <input type="text" class="form-control"  id="matricule" name="matricule" placeholder="Matricule:">
-                <span id="matricule-error" class="error"></span>
+                <label>Adresse</label>
+                <input type="text" class="form-control" id="adresse" name="adresse" placeholder="Adresse:">
+                <span id="adresse-error" class="error"></span>
             </div>
             <div class="col-xs-6">
                 <label>Date de Naissance</label>
-                <input type="date" class="form-control"  id="date_naiss" name="date_naiss" placeholder="Date de Naissance:">
+                <input type="date" class="form-control" id="date_naiss" name="date_naiss"
+                       placeholder="Date de Naissance:">
                 <span id="date_naiss-error" class="error-area"></span>
             </div>
             <div class="col-xs-6">
                 <label>Chambre</label>
                 <select class="form-control" name="chambre" id="chambre">
-                    <option value="1">CHAMBRE 1</option>
-                    <option value="1">CHAMBRE 2</option>
-                    <option value="1">CHAMBRE 3</option>
-                    <option value="1">CHAMBRE 4</option>
+                    <option value="0">Pas De Chambre</option>
                 </select>
+                <span id="chambre-error" class="error"></span>
+
             </div>
             <div class="col-xs-6">
                 <label>BOURSE</label>
                 <select class="form-control" name="bourse" id="bourse">
-                    <!-- la liste des bourse ici -->
                 </select>
+                <span id="bourse-error" class="error"></span>
+
             </div>
             <div class="col-xs-6">
                 <label>Téléphone</label>
-                <input type="tel" class="form-control"  id="telephone" name="telephone" placeholder="Numéro Téléphone:">
+                <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Numéro Téléphone:">
                 <span id="telephone-error" class="error-area"></span>
             </div>
             <div class="col-xs-6">
                 <label>Email</label>
-                <input type="email" class="form-control"  id="email" name="email" placeholder="Email:">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email:">
                 <span id="email-error" class="error-area"></span>
             </div>
 
