@@ -1,149 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-    <component name="BranchesTreeState">
-        <expand>
-            <path>
-                <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-                <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-            </path>
-            <path>
-                <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-                <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-            </path>
-            <path>
-                <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-                <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-                <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-            </path>
-        </expand>
-        <select />
-    </component>
-    <component name="ChangeListManager">
-        <list default="true" id="dd0ad6af-8465-4d69-847c-e87dd01409fc" name="Default Changelist" comment="">
-            <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-            <change afterPath="$PROJECT_DIR$/template/addChambre.php" afterDir="false" />
-            <change afterPath="$PROJECT_DIR$/template/addEtudiant.php" afterDir="false" />
-            <change afterPath="$PROJECT_DIR$/template/listEtudiant.php" afterDir="false" />
-            <change afterPath="$PROJECT_DIR$/template/listeChambre.php" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/deletePanier.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/index.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/inscription.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/jquery-price-slider.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.countdown.min.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.elevateZoom-3.0.8.min.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.elevatezoom.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.meanmenu.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.scrollUp.min.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/myFunctionAdmin.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/newProduit.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/panier.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/payment.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/plugins.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/vendor/jquery-1.11.3.min.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/vendor/jquery-1.12.3.min.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/vendor/modernizr-2.8.3.min.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/public/assets/js/wow.min.js" beforeDir="false" />
-            <change beforePath="$PROJECT_DIR$/template/layout/base.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/layout/base.php" afterDir="false" />
-        </list>
-        <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-        <option name="SHOW_DIALOG" value="false" />
-        <option name="HIGHLIGHT_CONFLICTS" value="true" />
-        <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-        <option name="LAST_RESOLUTION" value="IGNORE" />
-    </component>
-    <component name="ComposerSettings">
-        <execution>
-            <executable />
-        </execution>
-    </component>
-    <component name="Git.Settings">
-        <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    </component>
-    <component name="ProjectId" id="1dfys60y0uORpKOHbn0kNV74kPC" />
-    <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-        <ConfirmationsSetting value="2" id="Add" />
-    </component>
-    <component name="ProjectViewState">
-        <option name="hideEmptyMiddlePackages" value="true" />
-        <option name="showLibraryContents" value="true" />
-    </component>
-    <component name="PropertiesComponent">
-        <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-        <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-        <property name="WebServerToolWindowFactoryState" value="false" />
-        <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/js" />
-        <property name="node.js.detected.package.eslint" value="true" />
-        <property name="node.js.detected.package.tslint" value="true" />
-        <property name="node.js.path.for.package.eslint" value="project" />
-        <property name="node.js.path.for.package.tslint" value="project" />
-        <property name="node.js.selected.package.eslint" value="(autodetect)" />
-        <property name="node.js.selected.package.tslint" value="(autodetect)" />
-        <property name="nodejs_package_manager_path" value="npm" />
-    </component>
-    <component name="RecentsManager">
-        <key name="MoveFile.RECENT_KEYS">
-            <recent name="$PROJECT_DIR$" />
-        </key>
-        <key name="CopyFile.RECENT_KEYS">
-            <recent name="C:\wamp641\www\hebergement\public\assets\js" />
-            <recent name="$PROJECT_DIR$/public" />
-            <recent name="$PROJECT_DIR$" />
-        </key>
-    </component>
-    <component name="RunDashboard">
-        <option name="ruleStates">
-            <list>
-                <RuleState>
-                    <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-                </RuleState>
-                <RuleState>
-                    <option name="name" value="StatusDashboardGroupingRule" />
-                </RuleState>
-            </list>
-        </option>
-    </component>
-    <component name="SvnConfiguration">
-        <configuration />
-    </component>
-    <component name="TaskManager">
-        <task active="true" id="Default" summary="Default task">
-            <changelist id="dd0ad6af-8465-4d69-847c-e87dd01409fc" name="Default Changelist" comment="" />
-            <created>1592830645553</created>
-            <option name="number" value="Default" />
-            <option name="presentableId" value="Default" />
-            <updated>1592830645553</updated>
-            <workItem from="1592830646899" duration="2367000" />
-            <workItem from="1593035629841" duration="3569000" />
-            <workItem from="1593043106867" duration="5261000" />
-        </task>
-        <servers />
-    </component>
-    <component name="TypeScriptGeneratedFilesManager">
-        <option name="version" value="1" />
-    </component>
-    <component name="Vcs.Log.Tabs.Properties">
-        <option name="TAB_STATES">
-            <map>
-                <entry key="MAIN">
-                    <value>
-                        <State>
-                            <option name="COLUMN_ORDER" />
-                        </State>
-                    </value>
-                </entry>
-            </map>
-        </option>
-    </component>
-    <component name="WindowStateProjectService">
-        <state x="588" y="199" width="424" height="496" key="FileChooserDialogImpl" timestamp="1593036443098">
-            <screen x="68" y="27" width="1468" height="837" />
-        </state>
-        <state x="588" y="199" width="424" height="496" key="FileChooserDialogImpl/68.27.1468.837@68.27.1468.837" timestamp="1593036443098" />
-        <state x="600" y="371" width="399" height="161" key="NewPhpFileDialog" timestamp="1592830753252">
-            <screen x="68" y="27" width="1468" height="837" />
-        </state>
-        <state x="600" y="371" width="399" height="161" key="NewPhpFileDialog/68.27.1468.837@68.27.1468.837" timestamp="1592830753252" />
-    </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd0ad6af-8465-4d69-847c-e87dd01409fc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dfys60y0uORpKOHbn0kNV74kPC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mini-projetDB" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp641\www\hebergement\public\assets\js" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd0ad6af-8465-4d69-847c-e87dd01409fc" name="Default Changelist" comment="" />
+      <created>1592830645553</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592830645553</updated>
+      <workItem from="1592830646899" duration="2367000" />
+      <workItem from="1593035629841" duration="3569000" />
+      <workItem from="1593043106867" duration="5261000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="588" y="184" width="424" height="496" key="FileChooserDialogImpl" timestamp="1593257678365">
+      <screen x="68" y="27" width="1468" height="837" />
+    </state>
+    <state x="588" y="184" width="424" height="496" key="FileChooserDialogImpl/68.27.1468.837@68.27.1468.837" timestamp="1593257678365" />
+    <state width="1350" height="189" key="GridCell.Tab.0.bottom" timestamp="1593210773560">
+      <screen x="68" y="27" width="1468" height="837" />
+    </state>
+    <state width="1350" height="189" key="GridCell.Tab.0.bottom/68.27.1468.837@68.27.1468.837" timestamp="1593210773560" />
+    <state width="1350" height="189" key="GridCell.Tab.0.center" timestamp="1593210773559">
+      <screen x="68" y="27" width="1468" height="837" />
+    </state>
+    <state width="1350" height="189" key="GridCell.Tab.0.center/68.27.1468.837@68.27.1468.837" timestamp="1593210773559" />
+    <state width="1350" height="189" key="GridCell.Tab.0.left" timestamp="1593210773557">
+      <screen x="68" y="27" width="1468" height="837" />
+    </state>
+    <state width="1350" height="189" key="GridCell.Tab.0.left/68.27.1468.837@68.27.1468.837" timestamp="1593210773557" />
+    <state width="1350" height="189" key="GridCell.Tab.0.right" timestamp="1593210773560">
+      <screen x="68" y="27" width="1468" height="837" />
+    </state>
+    <state width="1350" height="189" key="GridCell.Tab.0.right/68.27.1468.837@68.27.1468.837" timestamp="1593210773560" />
+    <state x="600" y="371" width="399" height="161" key="NewPhpFileDialog" timestamp="1592830753252">
+      <screen x="68" y="27" width="1468" height="837" />
+    </state>
+    <state x="600" y="371" width="399" height="161" key="NewPhpFileDialog/68.27.1468.837@68.27.1468.837" timestamp="1592830753252" />
+    <state x="382" y="192" key="run.anything.popup" timestamp="1593211470986">
+      <screen x="68" y="27" width="1468" height="837" />
+    </state>
+    <state x="382" y="192" key="run.anything.popup/68.27.1468.837@68.27.1468.837" timestamp="1593211470986" />
+    <state x="381" y="26" width="840" height="1034" key="search.everywhere.popup" timestamp="1593187654408">
+      <screen x="68" y="27" width="1468" height="837" />
+    </state>
+    <state x="381" y="26" width="840" height="1034" key="search.everywhere.popup/68.27.1468.837@68.27.1468.837" timestamp="1593187654408" />
+  </component>
 </project>
