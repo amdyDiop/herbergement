@@ -12,9 +12,6 @@ $(document).ready(function () {
         data: {bourse: "bourse"},
         dataType: 'json',
         success: function (data) {
-            console.log('success for list bourse');
-            // console.log(data);
-            //myProduit.html('');
             printBouse(data, bourse);
         }, error: function (data) {
             console.log('erreur');
@@ -37,9 +34,6 @@ $(document).ready(function () {
         data: {chambre: "chambre"},
         dataType: 'json',
         success: function (data) {
-            console.log('success for list chambre');
-            //   console.log(data);
-            //myProduit.html('');
             printChambre(data, chambre);
         }, error: function (data) {
             console.log('erreur');
@@ -63,8 +57,6 @@ $(document).ready(function () {
             var bourse = $('#content #bourse').val();
             var chambre = $('#content #chambre').val();
             var adresse = $('#content #adresse').val();
-            // console.log(chambre);
-            // console.log(nom);
             if (prenom == "") {
                 $("#content #prenom-error").addClass("alert alert-danger").html("Veuillez saisir le  prenom !")
                     .fadeIn().delay(1000).fadeOut();
@@ -112,7 +104,6 @@ $(document).ready(function () {
                         data: {prenom: prenom, nom: nom, email: email, telephone: telephone, adresse: adresse, bourse:bourse, date_naiss:date_naiss,chambre:chambre},
                         dataType: 'text',
                         success: function (data) {
-                            console.log(data);
                            if (data =="invalid phone"){
                                $("#content #telephone-error").addClass("alert alert-danger").html("Veuillez saisir un numéro de téléphone   valide !")
                                    .fadeIn().delay(2500).fadeOut();

@@ -132,7 +132,8 @@
             </span>
                     </a>
                     <ul id="ul" class="treeview-menu">
-                        <li id="listeChambre" class="active"><a href="#"><i class="fa fa-circle-o"></i>Liste des chambres</a>
+                        <li id="listeChambre" class="active"><a href="#"><i class="fa fa-circle-o"></i>Liste des
+                                chambres</a>
                         </li>
                         <li id="addChambre"><a href="#"><i class="fa fa-circle-o"></i> Créer Chambre</a></li>
                     </ul>
@@ -145,7 +146,7 @@
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                     </a>
-                    <ul  class="treeview-menu">
+                    <ul class="treeview-menu">
                         <li id="addEtudiant"><a href="#"><i class="fa fa-circle-o"></i> Ajouter Etudiant </a></li>
                         <li id="listEtudiant"><a href="#"><i class="fa fa-circle-o"></i> Liste Etudiants </a></li>
                     </ul>
@@ -216,88 +217,12 @@
             <div class="row">
                 <!-- chargement des pages ici -->
                 <section id="content" class="col-lg-12 connectedSortable">
-                    <div class="col-sm-12">
-                        <table id="example2" class="table table-bordered table-hover dataTable" role="grid"
-                               aria-describedby="example2_info">
-                            <thead>
-                            <tr role="row">
-                                <th class="sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                    aria-sort="ascending"
-                                    aria-label="Rendering engine: activate to sort column descending">ID
-                                </th>
-                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                    aria-label="Browser: activate to sort column ascending">Numéro Chambre
-                                </th>
-                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                    aria-label="Platform(s): activate to sort column ascending">Type de Cahmbre
-                                </th>
-                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                    aria-label="Engine version: activate to sort column ascending">Batiment
-                                </th>
-
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr role="row" class="odd">
-                                <td class="sorting_1">Gecko</td>
-                                <td>Firefox 1.0</td>
-                                <td>Win 98+ / OSX.2+</td>
-                                <td>1.7</td>
-                            </tr>
-                            <tr role="row" class="odd">
-                                <td class="sorting_1">Gecko</td>
-                                <td>Firefox 1.0</td>
-                                <td>Win 98+ / OSX.2+</td>
-                                <td>1.7</td>
-                            </tr>
-                            <tr role="row" class="odd">
-                                <td class="sorting_1">Gecko</td>
-                                <td>Firefox 1.0</td>
-                                <td>Win 98+ / OSX.2+</td>
-                                <td>1.7</td>
-                            </tr>
-                            <tr role="row" class="odd">
-                                <td class="sorting_1">Gecko</td>
-                                <td>Firefox 1.0</td>
-                                <td>Win 98+ / OSX.2+</td>
-                                <td>1.7</td>
-                            </tr>
-                            <tr role="row" class="odd">
-                                <td class="sorting_1">Gecko</td>
-                                <td>Firefox 1.0</td>
-                                <td>Win 98+ / OSX.2+</td>
-                                <td>1.7</td>
-                            </tr>
-
-                            </tbody>
-                            <tfoot>
-                            <tr>
-                                <th class="sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                    aria-sort="ascending"
-                                    aria-label="Rendering engine: activate to sort column descending">ID
-                                </th>
-                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                    aria-label="Browser: activate to sort column ascending">Numéro Chambre
-                                </th>
-                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                    aria-label="Platform(s): activate to sort column ascending">Type de Cahmbre
-                                </th>
-                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                    aria-label="Engine version: activate to sort column ascending">Batiment
-                                </th>
-                            </tr>
-                            </tfoot>
-                        </table>
-                    </div>
+                    <?=include ('template/listeChambre.php')?>
                 </section>
             </div>
-            <!-- /.row (main row) -->
-
         </section>
-        <!-- /.content -->
     </div>
 </div>
-<!-- ./wrapper -->
 
 <!-- jQuery 3 -->
 <script src="public/assets/bower_components/jquery/dist/jquery.min.js"></script>
@@ -320,68 +245,21 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="public/assets/dist/js/pages/dashboard.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
-<!-- AdminLTE for demo purposes -->
 <script src="public/assets/dist/js/demo.js"></script>
-
 <script>
-    $(document).ready(function (e) {
+    $(document).ready(function () {
         //charger la page du li  avec on click
-        $('#option').on('click','li',function () {
-            var link= $(this).attr('id');
-            console.log(link);
-            if (link=="listeChambre"){
+        $('#option').on('click', 'li', function () {
+            var link = $(this).attr('id');
+            if (link == "listeChambre") {
                 $("#content").load("template/listeChambre.php");
-            }
-            else if (link=="addChambre"){
+            } else if (link == "addChambre") {
                 $("#content").load("template/addChambre.php");
-            }
-            else if (link=="listEtudiant"){
+            } else if (link == "listEtudiant") {
                 $("#content").load("template/listEtudiant.php");
-            }
-            else if (link=="addEtudiant"){
+            } else if (link == "addEtudiant") {
                 $("#content").load("template/addEtudiant.php");
             }
-        });
-        $("#enregistrer").click(function (e) {
-            e.preventDefault();
-            alert("magui si biir");
-            var login = $('#login').val();
-            var prenom = $('#prenom').val();
-            var nom = $('#nom').val();
-            var password = $('#password').val();
-            var role = $('#role').val();
-            var file_data = $('#file').prop('files')[0];    //Fetch the file
-            var form_data = new FormData();
-            form_data.append("file",file_data);
-            form_data.append("login",login);
-            form_data.append("prenom",prenom);
-            form_data.append("nom",nom);
-            form_data.append("password",password);
-            form_data.append("role",role);
-            console.log(form_data);
-            //Ajax to send file to upload
-            $.ajax({
-                url:'http://localhost/e_commerce/src/controller/newProduitController.php',
-                type: "POST",
-                dataType: 'script',
-                cache: false,
-                contentType: false,
-                processData: false,
-                data: form_data,
-                success:function(data){
-                    if ($("#login").val() === "") {
-                        $("#login-error").html("Veuillez saisir votre  nom d'utilisateur !")
-                            .fadeIn().delay(2000).fadeOut();
-                        //console.log(data);
-                    }
-                    else if (data == 0)
-                    {
-                        $("#resultat").html("erreur lors de upload file  !")
-                            .fadeIn().delay(2000).fadeOut();
-                        console.log(data);
-                    }
-                }
-            });
         });
     });
 </script>
