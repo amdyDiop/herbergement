@@ -15,7 +15,7 @@ spl_autoload_register(function ($class) {
 
 $etudiant = new Etudiant();
 
-if ($_POST['prenom']) {
+if (isset($_POST['prenom']) ){
     extract($_POST);
     $validator = new Validator();
     if ($validator->isEamil($email) !== 1) {
@@ -36,10 +36,16 @@ if ($_POST['prenom']) {
         echo $etudiant->enregistrerEtudiant($prenom,$nom,$matricule,$telephone,$email,$chambre,$adresse, $bourse,$date_naiss);
     }
 
-} else if ($_POST['limit']) {
+}
+
+else if(isset($_GET['user'])){
+   echo count($etudiant->findAll());
+}
+    else if (isset($_POST['limit'])) {
     $etudiant = new Etudiant();
     echo json_encode($etudiant->findAll());
 }
+
 
 
 

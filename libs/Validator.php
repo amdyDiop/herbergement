@@ -3,12 +3,10 @@
 class Validator
 {
     private $errors;
-
     public function getErrors()
     {
         return $this->errors;
     }
-
     public function isTelephone($telephone)
     {
           $validation = "/^7[7|7|6|8|0][0-9]{7}$/";

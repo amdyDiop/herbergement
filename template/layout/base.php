@@ -40,7 +40,7 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body id="body" class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
     <header class="main-header">
@@ -177,24 +177,24 @@
                     <!-- small box -->
                     <div class="small-box bg-aqua">
                         <div class="inner">
-                            <h3>150</h3>
-                            <p>nouvelles commandes</p>
+                            <h3 id="nbChambre">150</h3>
+                            <p>Nombre de Chambre </p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-bag"></i>
+                            <i class="fa fa-bed"></i>
                         </div>
                         <a href="#" class="small-box-footer">plus info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-6">
                     <!-- small box -->
-                    <div class="small-box bg-aqua">
+                    <div class="small-box bg-orange">
                         <div class="inner">
-                            <h3>150</h3>
-                            <p>nouvelles commandes</p>
+                            <h3 id="nbBatiment"></h3>
+                            <p>Nombre de Batiment</p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-bag"></i>
+                            <i class="fa fa-home"></i>
                         </div>
                         <a href="#" class="small-box-footer">plus info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
@@ -204,11 +204,11 @@
                     <!-- small box -->
                     <div class="small-box bg-red">
                         <div class="inner">
-                            <h3>65</h3>
-                            <p>visiteurs uniques</p>
+                            <h3 id="nbetudiant"></h3>
+                            <p>Nombre d'étudiants</p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-pie-graph"></i>
+                            <i class="fa fa-user-circle"></i>
                         </div>
                         <a href="#" class="small-box-footer">plus info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
@@ -223,7 +223,10 @@
         </section>
     </div>
 </div>
+<!-- Modal HTML embedded directly into document -->
+<div id="modalEdit" class="modal">
 
+</div>
 <!-- jQuery 3 -->
 <script src="public/assets/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
@@ -246,22 +249,7 @@
 <script src="public/assets/dist/js/pages/dashboard.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
 <script src="public/assets/dist/js/demo.js"></script>
-<script>
-    $(document).ready(function () {
-        //charger la page du li  avec on click
-        $('#option').on('click', 'li', function () {
-            var link = $(this).attr('id');
-            if (link == "listeChambre") {
-                $("#content").load("template/listeChambre.php");
-            } else if (link == "addChambre") {
-                $("#content").load("template/addChambre.php");
-            } else if (link == "listEtudiant") {
-                $("#content").load("template/listEtudiant.php");
-            } else if (link == "addEtudiant") {
-                $("#content").load("template/addEtudiant.php");
-            }
-        });
-    });
-</script>
+<script src="public/assets/js/base.js"></script>
+
 </body>
 </html>

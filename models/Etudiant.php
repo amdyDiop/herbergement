@@ -12,7 +12,7 @@ class Etudiant extends Manager
 
     public function findAll()
     {
-        return parent::findAll(); //appele  de la function fundALL() de menager et recuPération des Etudiant
+        return parent::findAll(); //appele  de la function fundALL() de menager pour la  recuPération des Etudiants
     }
 
     function enregistrerEtudiant($prenom, $nom, $matricule, $telephone, $email, $chambre, $adresse, $bourse, $date_naiss)

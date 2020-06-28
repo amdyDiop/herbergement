@@ -1,12 +1,10 @@
 <?php
 
 class Router{
-    
  private $ctrl;
  //Url => index.php?url=security/index
  //Reecrire URL =>security/index
     function route(){
-
         try{
             spl_autoload_register(function($class){
                 $pathModels="./models/".$class.".php";
