@@ -42,7 +42,6 @@
 </head>
 <body id="body" class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-
     <header class="main-header">
         <!-- Logo -->
         <a href="" class="logo">
@@ -57,38 +56,23 @@
             <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                 <span class="sr-only">Toggle navigation</span>
             </a>
-
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                    <!-- Messages: style can be found in dropdown.less-->
-                    <li class="dropdown messages-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-envelope-o"></i>
-                            <span class="label label-success">4</span>
-                        </a>
-                    </li>
-
-
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="public/assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                            <span class="hidden-xs">USER USER</span>
+                            <span class="hidden-xs">amdy diop</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
                                 <img src="public/assets/dist/img/user2-160x160.jpg" class="img-circle"
                                      alt="User Image">
-
-                                <p>
-                                    amdy diop
-
-                                </p>
+                                <p>amdy diop</p>
                             </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">
-
                                 <div class="pull-right">
                                     <form method="post">
                                         <input type="submit" name="deconnexion" class="btn btn-default btn-flat"
@@ -177,7 +161,7 @@
                     <!-- small box -->
                     <div class="small-box bg-aqua">
                         <div class="inner">
-                            <h3 id="nbChambre">150</h3>
+                            <h3 id="nbChambre">wait</h3>
                             <p>Nombre de Chambre </p>
                         </div>
                         <div class="icon">
@@ -190,7 +174,7 @@
                     <!-- small box -->
                     <div class="small-box bg-orange">
                         <div class="inner">
-                            <h3 id="nbBatiment"></h3>
+                            <h3 id="nbBatiment">wait</h3>
                             <p>Nombre de Batiment</p>
                         </div>
                         <div class="icon">
@@ -204,7 +188,7 @@
                     <!-- small box -->
                     <div class="small-box bg-red">
                         <div class="inner">
-                            <h3 id="nbetudiant"></h3>
+                            <h3 id="nbetudiant">wait</h3>
                             <p>Nombre d'étudiants</p>
                         </div>
                         <div class="icon">
@@ -218,6 +202,11 @@
                 <!-- chargement des pages ici -->
                 <section id="content" class="col-lg-12 connectedSortable">
                     <?=include ('template/listeChambre.php')?>
+
+                    <!-- Modal HTML embedded directly into document -->
+                    <div id="modalEdit" class="modal">
+
+                    </div>
                 </section>
             </div>
         </section>

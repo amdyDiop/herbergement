@@ -1,12 +1,13 @@
 $(document).ready(function () {
     let offset = 0;
+    const  base = "http://localhost/hebergement/";
     const content = $('#content');
     //declararion de la variable chambres pour le printdata ou niveau de l'id chambre
     const chambre = $('#content #tbodyChambre');
     //recupération de la liste des chambre avec ajax
     $.ajax({
         type: "POST",
-        url: "http://localhost/hebergement/controllers/ChambreController.php",
+        url:  base+"controllers/ChambreController.php",
         data: {limit: 8, offset: offset},
         dataType: 'json',
         success: function (data) {
@@ -22,7 +23,7 @@ $(document).ready(function () {
     $("#content #suivant").click(function () {
         $.ajax({
             type: "POST",
-            url: "http://localhost/hebergement/controllers/ChambreController.php",
+            url:  base+"controllers/ChambreController.php",
             data: {limit: 8, offset: offset},
             dataType: 'json',
             success: function (data) {
@@ -30,7 +31,7 @@ $(document).ready(function () {
                     offset = 0;
                     $.ajax({
                         type: "POST",
-                        url: "http://localhost/hebergement/controllers/ChambreController.php",
+                        url:  base+"controllers/ChambreController.php",
                         data: {limit: 8, offset: offset},
                         dataType: 'json',
                         success: function (data) {
@@ -59,12 +60,11 @@ $(document).ready(function () {
         var tab = $(this).attr('id').split("_")
         var id = tab[1];
         if (tab[0] == "delete") {
-
             if (confirm("voulez-vous supprimé cette chambre")) {
                 // $(this).parents('tr').hide();
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost/hebergement/controllers/ChambreController.php",
+                    url: base+"controllers/ChambreController.php",
                     data: {id: id},
                     dataType: 'json',
                     success: function (data) {
@@ -83,86 +83,11 @@ $(document).ready(function () {
             }
         }
         else if(tab[0] == "edit"){
-            const modalEdit = $('#modalEdit');
-            const typeChambre = $('#type');
-            const batiment = $('#batiment');
-            const edit = $('#edit');
-//recuperation d'un chambre
-            $.ajax({
-                type: "POST",
-                url: "http://localhost/hebergement/controllers/ChambreController.php",
-                data: {id: id, edit: "edit"},
-                dataType: 'json',
-                success: function (data) {
-                    //console.log('maa gui si biir');
-                    //console.log(data);
-                    modalEdit.html('')
-                    printModale(data, modalEdit)
-                    // console.log(data)
-                }, error: function (data) {
-                    console.log('erreur');
-                    console.log(data);
-                }
-            });
-            //recurpération des type de chambre pour le modal
-            $.ajax({
-                type: "GET",
-                url: "http://localhost/hebergement/controllers/TypeChambreController.php?type=type",
-                dataType: 'json',
-                success: function (data) {
-                    //console.log('maa gui si biir');
-                   //console.log(data);
-                  //  typeChambre.html('')
-                    printTypeChambre(data, typeChambre)
-                }, error: function (data) {
-                    console.log('erreur');
-                    console.log(data);
-                }
-            });
-            //recurpération des  des batiment pour le modal
-            $.ajax({
-                type: "POST",
-                url: "http://localhost/hebergement/controllers/BatimentController.php?batiment=batiment",
-                dataType: 'json',
-                success: function (data) {
-                    //   console.log('maa gui si biir');
-                    //console.log(data);
-                    //typeChambre.html('')
-                   printBatiment(data, batiment)
-                }, error: function (data) {
-                    console.log('erreur');
-                    console.log(data);
-                }
-            });
-            edit.click(function () {
-                console.log("beus na ma nag");
-                var numero = $('#numero').val();
-                var type = $('#type').val();
-                var batiment = $('#batiment').val();
-              //  console.log(numero ,  type , batiment)
-              $.ajax({
-                    type: "POST",
-                    url: "http://localhost/hebergement/controllers/ChambreController.php",
-                    data: {id:tab[1],numero:numero,batiment:batiment,type:type},
-                    dataType: 'json',
-                    success: function (data) {
-                           console.log('modifier');
-                        console.log(data);
-                    }, error: function (data) {
-                        console.log('erreur');
-                        console.log(data);
-                    }
-                });
-
-            })
-
-
+            $("#content").load("template/editChambre.php?id="+tab[1]+"");
         }
     })
-
     function printChambre(data, myChambre) {
         $.each(data, function (indice, chambre) {
-
             myChambre.append(` 
            <tr role="row" class="odd justity-content-center">
                 <td class="sorting_1">${chambre.id}</td>
@@ -170,14 +95,14 @@ $(document).ready(function () {
                 <td>${chambre.type}</td>
                 <td>${chambre.batiment}</td>
                 <td>
-                    <a href="#modalEdit" rel="modal:open"><button id="edit_${chambre.id}" type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button></a>
+                    <button id="edit_${chambre.id}" type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button>
                     <button  id="delete_${chambre.id}" type="button" class="btn btn-primary"><i class="fa fa-trash-o"></i> </button>
                 </td>
            </tr>
          `);
         });
     }
-
+/*
     function printModale(data, modalEdit) {
         modalEdit.html('')
         $.each(data, function (indice, chambre) {
@@ -221,22 +146,6 @@ $(document).ready(function () {
          `);
         });
     }
+*/
 
-    function printTypeChambre(data, typechambre) {
-        //typechambre.html('')
-        $.each(data, function (indice, type) {
-            typechambre.html('');
-            typechambre.append(` 
-            <option value="${type.id}">${type.type}</option>  
-         `);
-        });
-    }
-    function printBatiment(data, batiment) {
-       // batiment.html('')
-        $.each(data, function (indice, bat) {
-            batiment.append(` 
-            <option value="${bat.id}">${bat.nom}</option>  
-         `);
-        });
-    }
 });

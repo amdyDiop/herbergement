@@ -19,13 +19,19 @@ $chambre = new Chambre();
 else if (isset($_POST['chambre'])) {
     echo json_encode($chambre->findAll());
 }
-else if (isset($_GET['chambre'])) {
+else if (isset($_GET['chambre'])){
     echo count($chambre->findAll());
+
 }
-else if ( isset($_GET['type'])) {
+else if ( isset($_POST['modifier'])) {
     extract($_POST);
     echo json_encode($chambre->modifier($numero,$batiment,$type,$id));
-}// récupération d'une chambre
+}
+else if (isset($_POST['numero'])){
+    extract($_POST);
+    echo json_encode($chambre->findByNumero($id));
+}
+// récupération d'une chambre
 else if (isset($_POST['edit'])){
     extract($_POST);
     echo json_encode($chambre->findById($id));

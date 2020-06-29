@@ -1,4 +1,4 @@
-<div class="col-sm-12">
+<div id="listChambre" class="col-sm-12">
     <div class="box-tools">
         <div class="input-group input-group-xl" style="width: 250px;">
             <div class="input-group-btn-lg">
@@ -56,10 +56,10 @@
         </tr>
         </tfoot>
     </table>
+
 </div>
-<!-- Modal HTML embedded directly into document -->
-<div id="modalEdit" class="modal">
-</div>
+
+
 <!-- Remember to include jQuery :) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <!-- jQuery Modal -->

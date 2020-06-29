@@ -6,9 +6,10 @@ $(document).ready(function () {
     //declararion de la variable bourses pour le printdata ou niveau de l'id bourses
     const bourse = $('#content #bourse');
     //recupération de la liste des bourses avec ajax
+    const  base = "http://localhost/hebergement/";
     $.ajax({
         type: "POST",
-        url: "http://localhost/hebergement/controllers/BourseController.php",
+        url: base+"controllers/BourseController.php",
         data: {bourse: "bourse"},
         dataType: 'json',
         success: function (data) {
@@ -30,7 +31,7 @@ $(document).ready(function () {
     //recupération de la liste des chambres avec ajax
     $.ajax({
         type: "POST",
-        url: "http://localhost/hebergement/controllers/ChambreController.php",
+        url:base+"controllers/ChambreController.php",
         data: {chambre: "chambre"},
         dataType: 'json',
         success: function (data) {
@@ -100,7 +101,7 @@ $(document).ready(function () {
                     //alert(data);
                     $.ajax({
                         type: "POST",
-                        url: "http://localhost/hebergement/controllers/EtudiantController.php",
+                        url: base+"controllers/EtudiantController.php",
                         data: {prenom: prenom, nom: nom, email: email, telephone: telephone, adresse: adresse, bourse:bourse, date_naiss:date_naiss,chambre:chambre},
                         dataType: 'text',
                         success: function (data) {
@@ -116,6 +117,21 @@ $(document).ready(function () {
                                $("#content #resultat").addClass("alert-success").html("l'étudiant à été enregistré !")
                                    .fadeIn().delay(2500).fadeOut();
                                $("#content #myForm").trigger('reset'); //jquery
+                               //mise a jour nombre etudiant
+
+                               //récupération des nombres etudiants
+                               $.ajax({
+                                   type: "GET",
+                                   url: base+"controllers/EtudiantController.php?user=user",
+                                   dataType: 'text',
+                                   success: function (data) {
+                                       $('#nbetudiant').html(data)
+                                   }, error: function (data) {
+                                       console.log('erreur');
+                                       console.log(data);
+                                   }
+                               });
+
                            }
                            else
                                alert(data);

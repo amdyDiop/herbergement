@@ -12,25 +12,15 @@ $(document).ready(function () {
             $("#content").load("template/addEtudiant.php");
         }
     });
+    const  base = "http://localhost/hebergement/";
+
     //recuoération des nombres batiments
     $.ajax({
         type: "GET",
-        url: "http://localhost/hebergement/controllers/BatimentController.php?batiment=batiment",
+        url: base+"controllers/BatimentController.php?batiment=batiment",
         dataType: 'json',
         success: function (data) {
             $('#nbBatiment').html(data.length)
-        }, error: function (data) {
-            console.log('erreur');
-            console.log(data);
-        }
-    });
-    //récupération des nombres etudiants
-    $.ajax({
-        type: "GET",
-        url: "http://localhost/hebergement/controllers/EtudiantController.php?user=user",
-        dataType: 'text',
-        success: function (data) {
-            $('#nbetudiant').html(data)
         }, error: function (data) {
             console.log('erreur');
             console.log(data);
@@ -40,7 +30,20 @@ $(document).ready(function () {
     //récupération des nombres etudiants
     $.ajax({
         type: "GET",
-        url: "http://localhost/hebergement/controllers/ChambreController.php?chambre=chambre",
+        url: base+"controllers/EtudiantController.php?user=user",
+        dataType: 'text',
+        success: function (data) {
+            $('#nbetudiant').html(data)
+        }, error: function (data) {
+            console.log('erreur');
+            console.log(data);
+        }
+    });
+
+    //récupération des nombre de chambre
+    $.ajax({
+        type: "GET",
+        url: base+"controllers/ChambreController.php?chambre=chambre",
         dataType: 'text',
         success: function (data) {
             $('#nbChambre').html(data)

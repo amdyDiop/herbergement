@@ -20,23 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd0ad6af-8465-4d69-847c-e87dd01409fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/BatimentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/TypeChambreController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Batiment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/TypeChambre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/base.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/ChambreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ChambreController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/EtudiantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/EtudiantController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/Validator.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Validator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Chambre.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Chambre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Etudiant.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Etudiant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/IHebergement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/addEtudiant.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/addEtudiant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/base.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/listChambre.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/listChambre.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/listEtudiant.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/listEtudiant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/login.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/template/layout/base.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/layout/base.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/listeChambre.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/listeChambre.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +93,7 @@
       <workItem from="1592830646899" duration="2367000" />
       <workItem from="1593035629841" duration="3569000" />
       <workItem from="1593043106867" duration="5261000" />
-      <workItem from="1593284525484" duration="25524000" />
+      <workItem from="1593284525484" duration="32218000" />
     </task>
     <servers />
   </component>
@@ -161,5 +153,17 @@
       <screen x="68" y="27" width="1468" height="837" />
     </state>
     <state x="381" y="26" width="840" height="1034" key="search.everywhere.popup/68.27.1468.837@68.27.1468.837" timestamp="1593187654408" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/assets/js/listEtudiant.js</url>
+          <line>20</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

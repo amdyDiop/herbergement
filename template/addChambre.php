@@ -19,13 +19,11 @@
             <div class="col-xs-6">
                 <label>Libelle</label>
                 <input type="text" id="libelle" class="form-control col-6" name="libelle" placeholder="Libelle:">
-                <span id="libelle-error" class="error-area"></span>
+
             </div>
             <div class="col-xs-6">
                 <label>Description</label>
                 <input type="text" class="form-control"  id="description" name="description" placeholder="description:">
-                <span id="description-error" class="error-area"></span>
-
             </div>
             <div class="col-xs-6">
                 <label>Prix</label>

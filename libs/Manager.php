@@ -13,6 +13,7 @@ abstract class Manager
         //Connexion est fermée
         if ($this->pdo == null) {
             try {
+
                 $this->pdo = new PDO("mysql:host=localhost;dbname=hebergement", "amdy", "ouvreleboudhdeug", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
                   $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             } catch (PDOException $ex) {
